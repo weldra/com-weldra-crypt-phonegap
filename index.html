@@ -1,6 +1,7 @@
 <!doctype html>
 <html manifest="app.appcache" lang="en" itemscope itemtype="http://schema.org/WebApplication">
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self'; object-src 'none'; style-src 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <title>Weldra Crypt</title>
 <meta name="application-name" content="Weldra Crypt">
@@ -31,14 +32,14 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
 
-<link rel="chrome-application-definition" href="chrome-application-definition.json">
+<link rel="chrome-application-definition" href="manifest-crxless.json">
 
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/eggjjkglgfifcphbpfpojmoibonbceno">
 
 <meta name="msapplication-tooltip" content="Weldra Crypt">
 <meta name="msapplication-starturl" content="./">
-<meta name="msapplication-task" content="name=Decrypt a file; action-uri=#/decrypt; icon-uri=icon/decrypt.ico">
-<meta name="msapplication-task" content="name=Encrypt a file; action-uri=#/encrypt; icon-uri=icon/encrypt.ico">
+<meta name="msapplication-task" content="name=Decrypt a file; action-uri=#/decrypt; window-type=self; icon-uri=icon/decrypt.ico">
+<meta name="msapplication-task" content="name=Encrypt a file; action-uri=#/encrypt; window-type=self; icon-uri=icon/encrypt.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="ms-tile-image.png">
 
