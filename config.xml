@@ -24,11 +24,8 @@ TODO
 
   <content src="index.html"/>
 
-  <!--<feature name="http://example.com/camera">
-    <param name="autofocus" value="true"/>
-  </feature>-->
+  <preference name="phonegap-version" value="2.9.0" />
 
-  <!--<preference name     = "apikey"
-              value    = "ea31ad3a23fd2f"
-              readonly = "true" />-->
+  <preference name="permissions" value="none"/>
+
 </widget>
